@@ -1,0 +1,65 @@
+body {
+  font-family: sans-serif;
+  background-color: #ecf0f1;
+
+}
+
+.navbar a[name = 'login'] {
+  color: black;
+  background-color: #f2f2f2;
+}
+
+.hal_kost {
+  position: fixed;
+}
+
+.box {
+  font-style: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #3498db;
+  padding: 100px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 5px #636e72;
+}
+
+.box input[type = 'text'], form input[type = 'password'] {
+  font-size: 14px;
+  padding: 10px 5px;
+  margin: 10px auto;
+  text-align: center;
+  display: block;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  text-decoration: none;
+}
+
+.box input[type = 'text']:focus, form input[type = 'password']:focus {
+  border: 2px solid #34495e;
+}
+
+.box input[type = 'submit'] {
+  font-size: 14px;
+  padding: 10px 60px;
+  margin: 20px auto;
+  text-align: center;
+  display: block;
+  border: none;
+  background-color: #17c0eb;
+  border-radius: 5px;
+  outline: none;
+  text-decoration: none;
+}
+
+.box input[type = 'submit']:hover {
+  cursor: pointer;
+  background-color: #2980b9;
+}
+
+a {
+  text-decoration: none;
+}

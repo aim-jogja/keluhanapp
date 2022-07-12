@@ -1,0 +1,32 @@
+a {
+  text-decoration: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, 0%);
+  text-decoration: none;
+  width: 60px;
+}
+
+button {
+  background: none;
+  text-decoration: none;
+  border: none;
+  color: blue;
+}
+button:hover {
+  border-bottom: cyan solid 1px;
+}
+
+.card {
+  margin-top: 70px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  padding: 60px;
+  width: 1000px;
+}
+
+.card .js img {
+  width: 200px;
+  height: 200px;
+}

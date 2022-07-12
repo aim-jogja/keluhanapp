@@ -1,0 +1,73 @@
+.navbar-kosplain a[name = 'dashboard'] {
+  color: black;
+  background-color: #f2f2f2;
+}
+
+.card-box {
+  display: flex;
+  justify-content: center;
+}
+
+.card-box tr th {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.card-box tr td .content .cards .card {
+  position: inherit;
+  width: 200px;
+  height: 160px;
+  background: #3498db;
+  margin: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 2px 5px 3px #636e72;
+}
+
+.history {
+  margin-left: 10%;
+  margin-top: 80px;
+}
+
+.list {
+  width: 1000px;
+  text-align: center;
+  border-collapse: collapse;
+  cursor: pointer;
+}
+
+.table-wrapper {
+  overflow-y: scroll;
+  max-height: 300px;
+}
+
+.outer-wrapper {
+
+}
+
+.list th {
+  text-align: center;
+  top: 0px;
+  background: #3498db;
+  height: 40px;
+}
+
+.list tbody td {
+  border-bottom: 1px solid #bdc3c7;
+}
+
+.list td {
+  height: 35px;
+}
+
+.list tbody :hover {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.nothing {
+  margin-top: 30vh;
+}

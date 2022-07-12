@@ -1,0 +1,89 @@
+body {
+ margin: 0;
+ font-family: sans-serif;
+}
+
+.title {
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.top {
+  margin-bottom: 120px;
+}
+
+.navbar-kosplain {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #3498db;
+  overflow: hidden;
+}
+
+.navbar-kosplain a{
+ color: black;
+ text-align: center;
+ padding: 20px 16px;
+ text-decoration: none;
+ font-size: 16px;
+ float: right;
+ font-weight: bold;
+}
+
+.navbar-kosplain a[name = 'kosplain'] {
+  float: left;
+}
+
+.navbar-kosplain a:hover {
+  color: black;
+  background-color: #f2f2f2;
+  text-decoration: none;
+}
+
+.navbar-kosplain a[name = 'kosplain']:hover {
+  background-color: #3498db;
+}
+
+.search {
+  display: flex;
+  padding: 20px 20px;
+}
+
+.search input {
+  height: 30px;
+  padding: 20px 30px;
+  line-height: 18px;
+  border-radius: 5px;
+  margin-right: 3px;
+}
+
+.search .btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.hide {
+  display: none;
+}
+
+.bot {
+  margin-bottom: 200px;
+}
+
+.kosplain-footer .outter {
+  bottom: 0;
+  margin-top: 100px;
+  background-color: #3498db;
+  height: 100px;
+}
+
+.kosplain-footer .outter .text {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}

@@ -1,0 +1,27 @@
+body {
+ margin: 0:
+}
+
+.navbar {
+  position: sticky;
+  background-color: #e67e22;
+  overflow: hidden;
+}
+
+.navbar a{
+ color: #f2f2f2;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 17px;
+ float: left;
+}
+
+.navbar a[name = 'logout'] {
+  float: right;
+}
+
+.navbar a:hover {
+  color: #e67e22;
+  background-color: #f2f2f2;
+}
