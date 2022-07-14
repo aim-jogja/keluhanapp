@@ -84,7 +84,7 @@
                 <div class="card">
                   <div class="box">
                     <h3>Keluhan Diselesaikan</h3>
-                    <h1><?php echo $total[0]->total; ?></h1>
+                    <h1><?php echo $kSelesai; ?></h1>
                   </div>
                 </div>
               </div>

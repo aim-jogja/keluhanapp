@@ -37,7 +37,7 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Auth::login');
-$routes->resource('api/biodata');
+//$routes->resource('api/keluhan');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

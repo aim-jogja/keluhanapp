@@ -36,7 +36,14 @@ class Admin extends BaseController
         $total = $query->getResult();
 
         $keluhan = $this->keluhanModel->findAll();
-        return view('admin/index', compact(["monthCount", "total", "keluhan"]));     
+        $kSelesai = 0;
+
+        foreach($keluhan as $k){
+            if($k["status"] == 2){
+                $kSelesai++;
+            }
+        }
+        return view('admin/index', compact(["monthCount", "total", "keluhan", "kSelesai"]));     
     }
 
     public function keluhan(){
