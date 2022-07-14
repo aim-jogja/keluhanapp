@@ -34,13 +34,10 @@ class Auth extends BaseController
     
     public function valid_register()
     {
-        //tangkap data dari form 
         $data = $this->request->getPost();
-        
-        //jalankan validasi
+        //print_r($data);
         $this->validation->run($data, 'register');
         
-        //cek errornya
         $errors = $this->validation->getErrors();
         
         //jika ada error kembalikan ke halaman register
@@ -48,7 +45,12 @@ class Auth extends BaseController
             session()->setFlashdata('error', $errors);
             return redirect()->to('/auth/register');
         }
-        
+        $fileName = "";
+        if($this->request->getFile('photo') != ""){
+            $dataBerkas = $this->request->getFile('photo');
+            $fileName = $dataBerkas->getRandomName();
+            $dataBerkas->move('uploads/user/photo/', $fileName);
+        }
         //jika tdk ada error 
         
         //buat salt
@@ -63,6 +65,7 @@ class Auth extends BaseController
             'password' => $password,
             'salt' => "...",
             'role' => 2,
+            'photo' => $fileName,
             'nama_lengkap' => $data['namalengkap'],
             'nik' => $data['nik'],
             'no_hp' => $data['no_hp']
@@ -75,10 +78,8 @@ class Auth extends BaseController
     
     public function valid_login()
     {
-        //ambil data dari form
         $data = $this->request->getPost();
         
-        //ambil data user di database yang usernamenya sama 
         $user = $this->userModel->where('username', $data['username'])->first();
         
         if($user){

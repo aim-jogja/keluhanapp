@@ -8,7 +8,8 @@
     <style>
       
       .foot {
-        float: left;
+        position: fixed;
+        bottom: 0;
         background-color: #3498db;
         height: 90px;
         width: 100%;
@@ -32,7 +33,7 @@
       <div class="top-content">
         <div class="card">
           <div class="card-content">
-            <img src="../../bahan/Deni.jpeg" alt="">
+            <img src="<?php echo base_url('uploads/user/photo/'.$userPhoto["photo"]); ?>" alt="">
             <div class="card-alamat">
               <div class="alamat">
                 <h4>Alamat</h4>
@@ -51,7 +52,7 @@
 
         <h1>Keluhan Terbaru</h1>
 
-      <div class="container">
+      <div class="container" style="margin-bottom: 125px;">
         <?php 
             foreach($keluhan as $k){
         ?>

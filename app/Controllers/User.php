@@ -16,11 +16,12 @@ class User extends BaseController
     public function index()
     {
         $keluhan = $this->keluhanModel->findAll();
+        $userPhoto = $this->userModel->find($this->session->get("id_user"));
         if(!$this->session->has('isLogin')){
             return redirect()->to('/auth/login');
         }
         
-        return view('user/index', compact(["keluhan"]));
+        return view('user/index', compact(["keluhan", "userPhoto"]));
     }
 
     public function profile(){
