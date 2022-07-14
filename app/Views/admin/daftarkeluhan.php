@@ -57,6 +57,7 @@
                   <th>Judul</th>
                   <th>Tanggal</th>
                   <th>Isi</th>
+                  <th>Status</th>
                 </thead>
               </tr>
               <tbody>
@@ -69,6 +70,16 @@
                         <td><?php echo $k["judul"] ?></td>
                         <td><?php echo $k["tanggal"] ?></td>
                         <td><?php echo $k["isi"] ?></td>
+                        <td><?php 
+                            if($k["status"] == 0){
+                              echo "Belum di proses";
+                            }else if($k["status"] == 1){
+                              echo "di proses";
+                            }else if($k["status"] == 2){
+                              echo "Selesai";
+                            }
+                        
+                        ?></td>
                     </tr>
                 <?php
                     }
